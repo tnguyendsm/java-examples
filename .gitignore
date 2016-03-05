@@ -1,0 +1,14 @@
+.project
+.metadata
+.classpath
+/target/
+target/**
+bin/**
+tmp/**
+tmp/**/*
+.settings/
+*.tmp
+*.bak
+*.swp
+
+
