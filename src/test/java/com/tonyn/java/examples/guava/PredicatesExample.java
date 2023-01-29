@@ -1,15 +1,16 @@
 package com.tonyn.java.examples.guava;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import java.util.List;
 
-import org.apache.log4j.Logger;
-import org.junit.Test;
+import java.util.List;
 
 import com.google.common.base.Predicate;
 import com.google.common.base.Predicates;
 import com.google.common.collect.FluentIterable;
 import com.google.common.collect.Lists;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.junit.Test;
 
 /**
  * Guava Predicate Example
@@ -19,7 +20,7 @@ import com.google.common.collect.Lists;
  */
 public class PredicatesExample {
 
-	private static final Logger LOG = Logger.getLogger(PredicatesExample.class);
+	private static final Log LOG = LogFactory.getLog(PredicatesExample.class);
 
 	static List<Integer> numbers = Lists.newArrayList(1,2,3,4,5,6,7,8,9,10);
 	static List<Integer> evenNumbers = Lists.newArrayList(2,4,6,8,10);
